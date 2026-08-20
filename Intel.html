@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AMD</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:Arial, sans-serif;
+            background:white;
+            color:#111;
+        }
+        header{
+            height:225px;
+            background:#999999;
+            color:white;
+            padding:25px 30px;
+            position:relative;
+        }
+        header h1{
+            font-size:76px;
+            font-weight:300;
+        }
+        .author{
+            position:absolute;
+            right:30px;
+            bottom:25px;
+            font-size:24px;
+        }
+        nav{
+            height:55px;
+            background:#5d5d5d;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:75px;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:36px;
+        }
+        nav a:hover{
+            color:#00c8ff;
+        }
+        main{
+            padding:45px 30px;
+        }
+        .intro{
+            display:flex;
+            gap:28px;
+            margin-bottom:40px;
+        }
+        .intro-image{
+            width:50%;
+        }
+        .intro-image img{
+            width:100%;
+            height:485px;
+            object-fit:cover;
+            border-radius:20px;
+            display:block;
+        }
+        .intro-text{
+            width:50%;
+            background:#d9d9d9;
+            border-radius:20px;
+            padding:40px 25px;
+        }
+        .intro-text h2{
+            text-align:center;
+            font-size:38px;
+            font-weight:400;
+            margin-bottom:45px;
+        }
+        .intro-text p{
+            font-size:21px;
+            line-height:1.25;
+        }
+        .info-box{
+            background:#d9d9d9;
+            border-radius:20px;
+            padding:25px;
+            margin-bottom:40px;
+        }
+        .info-box p{
+            font-size:21px;
+            line-height:1.3;
+            margin-bottom:25px;
+        }
+        .info-box p:last-child{
+            margin-bottom:0;
+        }
+        footer{
+            background:#5d5d5d;
+            color:white;
+            text-align:center;
+            padding:20px;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AMD</h1>
+        <div class="author">
+            Tavin Lim
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="NVIDIA.html">NVIDIA</a>
+        <a href="AMD.html">Intel</a>
+    </nav>
+    <main>
+        <section class="intro">
+            <div class="intro-image">
+                <img src="images/Intel.jpg" alt="Intel Arc">
+            </div>
+            <div class="intro-text">
+                <h2>AMD</h2>
+                <p>
+                   Intel is a newer participant in the discrete GPU market, having launched its Arc graphics line to compete in dedicated desktop and laptop graphics. While Intel has long integrated basic graphics processors into its CPUs, its Arc series represents a dedicated effort to compete in affordable categories. These GPUs aim to bring modern visual features to entry-level and mid-range price points.
+                </p>
+            </div>
+        </section>
+        <section class="info-box">
+            <p>
+               Intel equips its discrete GPUs with contemporary features such as hardware ray tracing support, dedicated AV1 video encoding, and AI upscaling technology called XeSS. The company has focused on regular software driver updates to improve performance in older graphics APIs and stabilize newer game releases. This approach helps offer budget-conscious users access to modern video editing and gaming capabilities.
+            </p>
+            <p>
+                As Intel continues to develop its GPU architecture, it aims to establish a firmer foothold in both gaming and workstation segments. By pairing its dedicated GPUs with its wide distribution network and CPU market share, Intel works to provide reliable options for system builders seeking modern feature sets without higher price tags.
+            </p>
+        </section>
+        <section class="info-box">
+            <p>
+                Ultimately, Intel is steadily expanding its presence in the discrete GPU market by targeting accessibility and modern feature availability. By delivering capabilities like hardware ray tracing, XeSS upscaling, and AV1 encoding at entry-level and mid-range price points, Intel provides a practical option for budget builders and everyday content creators.
+            </p>
+        </section>
+    </main>
+    <footer>
+        GPU Comparison Website
+    </footer>
+</body>
+</html>

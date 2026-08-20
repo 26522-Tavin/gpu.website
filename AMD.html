@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AMD</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:Arial, sans-serif;
+            background:white;
+            color:#111;
+        }
+        header{
+            height:225px;
+            background:#999999;
+            color:white;
+            padding:25px 30px;
+            position:relative;
+        }
+        header h1{
+            font-size:76px;
+            font-weight:300;
+        }
+        .author{
+            position:absolute;
+            right:30px;
+            bottom:25px;
+            font-size:24px;
+        }
+        nav{
+            height:55px;
+            background:#5d5d5d;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:75px;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:36px;
+        }
+        nav a:hover{
+            color:#00c8ff;
+        }
+        main{
+            padding:45px 30px;
+        }
+        .intro{
+            display:flex;
+            gap:28px;
+            margin-bottom:40px;
+        }
+        .intro-image{
+            width:50%;
+        }
+        .intro-image img{
+            width:100%;
+            height:485px;
+            object-fit:cover;
+            border-radius:20px;
+            display:block;
+        }
+        .intro-text{
+            width:50%;
+            background:#d9d9d9;
+            border-radius:20px;
+            padding:40px 25px;
+        }
+        .intro-text h2{
+            text-align:center;
+            font-size:38px;
+            font-weight:400;
+            margin-bottom:45px;
+        }
+        .intro-text p{
+            font-size:21px;
+            line-height:1.25;
+        }
+        .info-box{
+            background:#d9d9d9;
+            border-radius:20px;
+            padding:25px;
+            margin-bottom:40px;
+        }
+        .info-box p{
+            font-size:21px;
+            line-height:1.3;
+            margin-bottom:25px;
+        }
+        .info-box p:last-child{
+            margin-bottom:0;
+        }
+        footer{
+            background:#5d5d5d;
+            color:white;
+            text-align:center;
+            padding:20px;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AMD</h1>
+        <div class="author">
+            Tavin Lim
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="NVIDIA.html">NVIDIA</a>
+        <a href="Intel.html">Intel</a>
+    </nav>
+    <main>
+        <section class="intro">
+            <div class="intro-image">
+                <img src="images/AMD.jpg" alt="AMD Radeon">
+            </div>
+            <div class="intro-text">
+                <h2>AMD</h2>
+                <p>
+                    AMD (Advanced Micro Devices) focuses on providing
+                    competitive graphics performance with an emphasis
+                    on value for price. Its Radeon graphics cards are
+                    designed to deliver strong traditional rasterization
+                    performance, often equipping mid-range models with
+                    generous amounts of video memory (VRAM). This
+                    approach helps modern games handle high-resolution
+                    textures and complex visual assets without running
+                    out of memory.
+                </p>
+            </div>
+        </section>
+        <section class="info-box">
+            <p>
+                In addition to standalone graphics cards, AMD emphasizes
+                an open-source development strategy. Technologies like
+                FidelityFX Super Resolution (FSR) are designed to work
+                across a wide range of hardware, including older GPUs
+                and competing platforms. AMD also supplies custom
+                processor and graphics hardware for major gaming
+                consoles, including the PlayStation 5 and Xbox Series
+                systems, establishing a broad footprint across the
+                gaming hardware market.
+            </p>
+            <p>
+                AMD also works on ecosystem features that integrate
+                its GPUs with its Ryzen processors. Technologies like
+                SmartAccess Memory allow the CPU to access the full
+                GPU memory buffer at once, improving system efficiency
+                in supported titles. Through continuous driver updates
+                and competitive hardware pricing, AMD remains a key
+                alternative for builders looking for solid graphics
+                performance per dollar.
+            </p>
+        </section>
+        <section class="info-box">
+            <p>
+                Overall, AMD stands out for delivering balanced
+                performance and value across a broad hardware
+                footprint. By prioritizing generous video memory,
+                competitive rasterization performance, and
+                open-source software like FidelityFX Super Resolution,
+                AMD offers flexible choices for desktop gamers,
+                budget-conscious builders, and major console
+                manufacturers alike.
+            </p>
+        </section>
+    </main>
+    <footer>
+        GPU Comparison Website
+    </footer>
+</body>
+</html>

@@ -5,6 +5,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>GPU Comparison</title>
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#d9d9d9;
+    color:#222;
+}
+
+
+
+header{
+    background:#a9a9a9;
+    color:white;
+    padding:30px;
+}
+
+header h1{
+    font-size:55px;
+    font-weight:300;
+}
+
+header p{
+    text-align:right;
+}
+
+
+nav{
+    background:#666;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    margin:0 40px;
+}
+
+nav a:hover{
+    color:#00c8ff;
+    
+}
+
+
+main{
+    width:95%;
+    margin:20px auto;
+}
+
+
+.top{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    flex:1;
+    box-shadow:0 4px 8px rgba(0,0,0,.15);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.5;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+
+.comparison{
+    background:#efefef;
+    padding:25px;
+    border-radius:12px;
+}
+
+
+.logos{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:30px;
+}
+
+.logo{
+    width:120px;
+    height:180px;
+    border-radius:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+}
+
+.nvidia{
+    background:#76b900;
+}
+
+.amd{
+    background:#DE0030;
+}
+
+.intel{
+    background:#01C6FB;
+}
+
+.logo img{
+    width:75%;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    font-size:28px;
+    padding:15px;
+    border-bottom:2px solid #888;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #bbb;
+    vertical-align:top;
+    line-height:1.6;
+}
+
+.feature{
+    font-weight:bold;
+    width:200px;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+tr:hover{
+    background:#ececec;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+
+footer{
+    background:#666;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:25px;
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -14,9 +188,9 @@
 
 <nav>
     <a href="Intel.html">Intel</a>
-    <a href="NVIDIA.html">"NVIDIA"</a>
+    <a href="NVIDIA.html">NVIDIA</a>
     <a href="AMD.html">AMD</a>
-</nav>
+</nav> 
 
 <main>
     <div class="top">
@@ -35,7 +209,7 @@
     <div class="comparison">
         <div class="logos">
             <div class="logo nvidia">
-                <img src="images/nvidia.jpg" alt="NVIDIA">
+                    <img src="images/nvidia.jpg" alt="NVIDIA">
             </div>
 
             <div class="logo amd">  
@@ -84,5 +258,38 @@
             <td>FSR (FidelityFX Super Resolution)</td>
             <td>XeSS (Xe Super Sampling)</td>
         </tr>
+        <tr>
+            <td class="feature">Key Strengths</td>
+        
+            <td>
+                <ul>
+                    <li>Industry-leading ray tracing</li>
+                    <li>Excellent AI performance</li>
+                    <li>Advanced DLSS upscaling</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Excellent value</li>
+                    <li>Large VRAM options</li>
+                    <li>Strong rasterisation performance</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Affordable pricing</li>
+                    <li>AV1 encoding support</li>
+                    <li>Great entry-level performance</li>
+                </ul>
+            </td>
+        </tr>
     </table>
+    </div>
+    </main>
+    <footer>
+        2026 GPU Comparison Website.
+    </footer>
+</body>
+</html>
+    
     
